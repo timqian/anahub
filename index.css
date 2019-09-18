@@ -91,10 +91,13 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 5px 0 30px 0;
+}
+
+.summary p {
 	font-weight: normal;
 	font-size: 1.5rem;
 	line-height: 0;
-	margin: 5px 0 30px 0;
 }
 
 .summary .datepicker {

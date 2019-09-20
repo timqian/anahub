@@ -61,6 +61,20 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1.5/dist/chart.xkcd.min.js"></script>
     <script src="./index.js"></script>
-    <img src="http://localhost:3000/hello.png" alt="" style="display: none">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      const origin = document.location.origin
+      const path = document.location.pathname;
+      const referrer = document.referrer;
+
+      axios.get('http://192.168.8.176:3000/hello', {
+        params: {
+          origin,
+          path,
+          referrer,
+        }
+      })
+    </script>
   </body>
 </html>
